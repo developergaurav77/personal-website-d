@@ -1,0 +1,8 @@
+{% extends 'homepage/base.html' %}
+{% block content %}
+<h1>{{project_ids.title}}</h1>
+
+<h2>--{{project_ids.date}}--</h2>
+
+<p>{{project_ids.desc|safe}}</p>
+{% endblock %}

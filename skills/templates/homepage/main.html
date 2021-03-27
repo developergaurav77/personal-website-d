@@ -1,0 +1,35 @@
+{% extends 'homepage/base.html' %}
+{% block content %}
+    <h1>Gaurav Thagunna</h1>
+
+
+   
+   
+
+    {% load static %}
+    
+    <img src="{% static 'skills/photo.jpeg'%}" height="300" width="400">
+
+
+    {% for skill in skills %}
+    <br>
+    {{skill.title}}
+    <br>
+    {{skill.desc}}
+    <br>
+    <img src="{{skill.img.url}}">
+
+    <br>
+
+    <a href="{{skill.url}}" target="_blank">link</a>
+    <br>
+
+    {% endfor %}
+
+{% endblock %}
+
+
+
+
+
+
